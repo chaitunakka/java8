@@ -21,11 +21,12 @@ class FutureDemo{
 		System.out.println("calling future.get()");
 		try {
 			f.get();
-			System.out.println(f.isDone());
 		} catch (InterruptedException | ExecutionException e) {
 			e.printStackTrace();
 		}
-		System.out.println("shutdown");
+		while(!f.isDone())
+			System.out.println("running");
 		es.shutdownNow();
+		System.out.println("shutdown");
 	}
 }
