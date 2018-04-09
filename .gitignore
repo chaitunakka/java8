@@ -30,3 +30,8 @@ out/
 .classpath
 .project
 SampleProject.iml
+.sts4-cache
+
+# maven
+.mvn/
+target/
