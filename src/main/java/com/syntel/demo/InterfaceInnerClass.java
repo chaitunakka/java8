@@ -11,6 +11,6 @@ interface Demo{
 class InterfaceInnerClass extends Demo.InsideDemo{
     public static void main(String[] args) {
         InterfaceInnerClass i = new InterfaceInnerClass();
-        //i.print();
+        System.out.println(i);
     }
 }
