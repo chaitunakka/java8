@@ -98,6 +98,7 @@ public class MethodRefCompare {
 		//Reference to an Instance Method of an Arbitrary Object of a Particular Type
 		strList.sort(String::compareTo);
 		strList.forEach(out::println);
+		empList.forEach(Employee::toString);
 	}
 
 }
