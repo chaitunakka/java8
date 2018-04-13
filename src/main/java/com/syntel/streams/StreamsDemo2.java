@@ -1,4 +1,4 @@
-package com.syntel.Lambda;
+package com.syntel.streams;
 
 import java.util.Arrays;
 import java.util.List;

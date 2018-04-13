@@ -72,6 +72,9 @@ public class Comparator {
 									.filter(ageLessThanThree)
 									.collect(Collectors.toList());
 		empFilter.forEach(out::println);
+		System.out.println("-----------------");
+		elist.sort(java.util.Comparator.comparingInt(Emp::getAge));
+		elist.forEach(out::println);
 	}
 
 }

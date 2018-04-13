@@ -1,4 +1,4 @@
-package com.syntel.Lambda;
+package com.syntel.streams;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
