@@ -2,6 +2,8 @@ package com.example.prac;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 class Person implements Comparable<Person> {
 	private String name;
@@ -42,13 +44,16 @@ class Person implements Comparable<Person> {
 public class Compare {
 
 	public static void main(String[] args) {
-		ArrayList<Person> al=new ArrayList<Person>();  
-		al.add(new Person("Vijay",23));  
-		al.add(new Person("Ajay",27));  
-		al.add(new Person("Jai",21));
+		// ArrayList<Person> al=new ArrayList<Person>();  
+		// al.add(new Person("Vijay",23));  
+		// al.add(new Person("Ajay",27));  
+		// al.add(new Person("Jai",21));
 		
-		Collections.sort(al);
-		al.forEach(System.out::println);
+		// Collections.sort(al);
+		// al.forEach(System.out::println);
+
+		Map<String, Boolean> map = new HashMap<>();
+		map.computeIfAbsent("key", k -> k.length() > 1);
 	}
 
 }

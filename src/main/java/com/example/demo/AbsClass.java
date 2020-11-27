@@ -13,6 +13,7 @@ abstract class Abs {
 public class AbsClass extends Abs {
 
 	public static void main(String[] args) {
-		
+		Abs abs = new AbsClass();
+		System.out.println(abs.getString());
 	}
 }
